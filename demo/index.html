@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>angular-minimal-piechart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../angular-minimal-piechart.css">
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../angular-minimal-piechart.js"></script>
+
+    <script src="index.js"></script>
+
+  </head>
+  <body ng-app="demoApp" ng-controller="demoMainController">
+    <label>
+      <span>Value</span>
+      <input type="range" string-to-number ng-model="value" ng-value="value">
+      <input type="number" string-to-number ng-model="value" ng-value="value" max="100" min="0">
+    </label>
+
+    <piechart value="value" id="piechart1"></piechart>
+    <piechart class="dark" value="value" id="piechart2"></piechart>
+    
+    <donutchart value="value" id="donutchart1"></donutchart>
+    <donutchart class="dark" value="value" id="donutchart2"></donutchart>
+  </body>
+</html>

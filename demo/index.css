@@ -1,0 +1,24 @@
+piechart, donutchart {
+  width: 100px;
+  padding: 20px;
+}
+
+.dark {
+  background: #2196F3;
+}
+
+#piechart2 .min-piechart-wheel {
+  stroke: rgba(255, 255, 255, .25);
+}
+
+#piechart2 .min-piechart-value {
+  stroke: #fff;
+}
+
+#donutchart2 .min-piechart-wheel {
+  stroke: rgba(255, 255, 255, .25);
+}
+
+#donutchart2 .min-piechart-value {
+  stroke: #fff;
+}

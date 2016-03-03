@@ -1,0 +1,31 @@
+piechart, donutchart
+  display block
+  position relative
+
+.piechart-svg
+  display block
+  margin 0 auto
+  transform rotate(-90deg)
+  transform-origin center center
+  border-radius 50%
+  overflow hidden
+
+  circle
+    fill none
+
+  .min-piechart-wheel
+    stroke alpha(#858585, .25)
+
+  .min-piechart-value
+    stroke #2196F4
+    stroke-dasharray 0 280
+    transition stroke-dasharray .3s cubic-bezier(0.18, 0.89, 0.32, 1.28)
+
+
+piechart
+  circle
+    stroke-width 32
+
+donutchart
+  circle
+    stroke-width 3
