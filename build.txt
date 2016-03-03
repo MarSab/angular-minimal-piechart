@@ -8,4 +8,8 @@
  * License <%= info.license %>
  */
 
+(function(angular) {
+
 <%= contents %>
+
+})(window.angular);

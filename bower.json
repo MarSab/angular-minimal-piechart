@@ -1,6 +1,6 @@
 {
   "name": "angular-minimal-piechart",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Directive for minimalistic Piecharts.",
   "main": [
     "angular-minimal-piechart.js",
@@ -27,7 +27,11 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src",
+    "demo",
+    "build*.txt",
+    "gulpfile.*"
   ],
   "dependencies": {
     "angular": "^1.5.0"
