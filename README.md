@@ -3,14 +3,14 @@
 AngularJS Directive for minimalistic Pie Charts and Donut Chart.
 
 ## Install
-  
+
 Download it with bower
 
 ```shell
 bower install https://github.com/pasqLisena/angular-minimal-piechart
 ```
 
-Add to your page 
+Add to your page
 
 ```html
 <link rel="stylesheet" href="bower_components/angular-minimal-piechart.css">
@@ -19,7 +19,7 @@ Add to your page
 ```
 
 Declare it as dependency in your app module definition:
-  
+
 ```js
 angular.module('myAppModule', ['minimalPiechart']
 ```
@@ -42,11 +42,10 @@ The module expose two directives:
 The color can be changed throug css
 
 ```css
-.min-piechart-wheel {
+.piechart-wheel {
   stroke: rgba(255, 255, 255, .25);
 }
-.min-piechart-value {
+.piechart-value {
   stroke: #fff;
 }
 ```
-

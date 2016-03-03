@@ -36,30 +36,23 @@ gulp.task('bump-version', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('release', ['test'], function(callback) {
-  runSequence(
-    'bump-version',
-    'build',
-    'commit-changes',
-    'tag-version',
-    function(error) {
-      if (error) {
-        console.log(error.message);
-      } else {
-        console.log('RELEASE FINISHED SUCCESSFULLY');
-      }
-      callback(error);
-    });
-});
 
-gulp.task('build', () => {
-  return gulp.src("src/angular-ui-router-title.js")
-    .pipe(wrap({
+gulp.task('build', ['styles', 'templates', 'scripts'], () => {
+  gulp.src("./angular-minimal-piechart.js")
+    .pipe($.wrap({
       src: './build.txt'
     }, {
       info: require('./package.json')
     }))
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest(dist));
+
+  gulp.src("./angular-minimal-piechart.css")
+    .pipe($.wrap({
+      src: './build_css.txt'
+    }, {
+      info: require('./package.json')
+    }))
+    .pipe(gulp.dest(dist));
 });
 
 gulp.task('styles', () => {

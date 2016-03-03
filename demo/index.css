@@ -7,18 +7,18 @@ piechart, donutchart {
   background: #2196F3;
 }
 
-#piechart2 .min-piechart-wheel {
+#piechart2 .piechart-wheel {
   stroke: rgba(255, 255, 255, .25);
 }
 
-#piechart2 .min-piechart-value {
+#piechart2 .piechart-value {
   stroke: #fff;
 }
 
-#donutchart2 .min-piechart-wheel {
+#donutchart2 .piechart-wheel {
   stroke: rgba(255, 255, 255, .25);
 }
 
-#donutchart2 .min-piechart-value {
+#donutchart2 .piechart-value {
   stroke: #fff;
 }

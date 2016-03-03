@@ -1,7 +1,11 @@
 {
   "name": "angular-minimal-piechart",
+  "version": "0.1.1",
   "description": "Directive for minimalistic Piecharts.",
-  "main": ["angular-minimal-piechart.js", "angular-minimal-piechart.css"],
+  "main": [
+    "angular-minimal-piechart.js",
+    "angular-minimal-piechart.css"
+  ],
   "authors": [
     "Pasquale Lisena (pasq.lisena@gmail.com)"
   ],
